@@ -1,10 +1,15 @@
 //progression of heartbreak
 /// trying to make a loop of these photos to show the progression of heartbreak through drawings i made
 
-PImage[] face = new PImage[12];
+int numFrames = 12;
+int currentFrame = 0;
+PImage[] face = new PImage[numFrames];
 
 void setup(){
   size(600, 600);
+  frameRate(5);
+  
+  
   face[0] = loadImage("0.jpg");  //loads image onto sketch, dimensions 1350,1350 pixels //
   face[1] = loadImage("1.jpg");
   face[2] = loadImage("2.jpg");
@@ -20,7 +25,10 @@ void setup(){
 }
 
 void draw(){
- 
+ background (0);
   imageMode (CENTER);
   
+
+
+}
 }
